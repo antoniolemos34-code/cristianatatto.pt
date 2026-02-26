@@ -6,7 +6,7 @@
   <meta name="robots" content="index,follow,max-image-preview:large" />
 
   <title>Cris Santos Tattoo | Tatuagens em Ponte da Barca</title>
-  <meta name="description" content="Cris Santos Tattoo — tatuagens em Ponte da Barca. Especialista em lettering, blackwork e dotwork. Marca a tua sessão pelo Instagram." />
+  <meta name="description" content="Cris Santos Tattoo — tatuagens em Ponte da Barca. Lettering, Blackwork e Dotwork. Marca a tua sessão pelo Instagram." />
   <link rel="canonical" href="https://crisantostattoo.pt/" />
 
   <meta property="og:title" content="Cris Santos Tattoo | Ponte da Barca" />
@@ -14,23 +14,23 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://crisantostattoo.pt/" />
   <meta property="og:image" content="https://crisantostattoo.pt/cris-logo.png" />
-  <meta name="theme-color" content="#0b0b0b" />
+  <meta name="theme-color" content="#07080a" />
+
   <link rel="icon" href="cris-logo.png" />
 
   <style>
     :root{
       --bg:#07080a;
-      --card:rgba(16,16,18,.72);
-      --text:#f5f6f8;
-      --muted:#b9bdc7;
+      --text:#f6f7fb;
+      --muted:#b8bdc7;
+      --card:rgba(16,16,18,.74);
       --line:rgba(255,255,255,.12);
       --radius:18px;
-      --shadow: 0 16px 60px rgba(0,0,0,.55);
+      --shadow: 0 18px 70px rgba(0,0,0,.55);
 
-      /* acentos “modernos” */
       --a1:#8b5cf6; /* roxo */
-      --a2:#22c55e; /* verde */
-      --a3:#06b6d4; /* cyan */
+      --a2:#06b6d4; /* cyan */
+      --a3:#22c55e; /* verde */
       --a4:#f59e0b; /* dourado */
     }
 
@@ -41,15 +41,15 @@
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
       color:var(--text);
       background:
-        radial-gradient(1100px 700px at 18% 0%, rgba(139,92,246,.22), transparent 58%),
-        radial-gradient(900px 620px at 82% 8%, rgba(6,182,212,.18), transparent 60%),
-        radial-gradient(900px 620px at 50% 110%, rgba(245,158,11,.10), transparent 60%),
+        radial-gradient(1100px 700px at 18% 0%, rgba(139,92,246,.24), transparent 58%),
+        radial-gradient(900px 620px at 82% 8%, rgba(6,182,212,.20), transparent 60%),
+        radial-gradient(900px 620px at 50% 110%, rgba(245,158,11,.12), transparent 60%),
         var(--bg);
       overflow-x:hidden;
     }
     a{color:inherit;text-decoration:none}
 
-    /* laterais com cor + linhas (bem visível) */
+    /* laterais com cor + linhas (para não ficar bland) */
     .side{
       position:fixed; top:0; bottom:0; width:220px; z-index:0; pointer-events:none;
       opacity:.95;
@@ -58,12 +58,12 @@
     .side.right{right:0}
     .side:before{
       content:"";
-      position:absolute; inset:-80px;
+      position:absolute; inset:-90px;
       background:
-        radial-gradient(closest-side at 40% 20%, rgba(139,92,246,.35), transparent 70%),
-        radial-gradient(closest-side at 60% 55%, rgba(6,182,212,.26), transparent 72%),
-        radial-gradient(closest-side at 50% 85%, rgba(245,158,11,.20), transparent 70%);
-      filter: blur(8px);
+        radial-gradient(closest-side at 35% 20%, rgba(139,92,246,.40), transparent 70%),
+        radial-gradient(closest-side at 70% 55%, rgba(6,182,212,.28), transparent 72%),
+        radial-gradient(closest-side at 55% 85%, rgba(245,158,11,.24), transparent 70%);
+      filter: blur(10px);
     }
     .side:after{
       content:"";
@@ -71,38 +71,31 @@
       background: linear-gradient(180deg,
         transparent 0%,
         rgba(255,255,255,.10) 18%,
-        rgba(34,197,94,.25) 40%,
-        rgba(6,182,212,.22) 60%,
-        rgba(139,92,246,.20) 78%,
+        rgba(34,197,94,.26) 40%,
+        rgba(6,182,212,.24) 60%,
+        rgba(139,92,246,.22) 78%,
         transparent 100%);
-      opacity:.9;
       transform: translateX(-0.5px);
+      opacity:.95;
     }
 
     header{
       position:sticky; top:0; z-index:50;
-      background: linear-gradient(180deg, rgba(7,8,10,.92), rgba(7,8,10,.60));
+      background: linear-gradient(180deg, rgba(7,8,10,.92), rgba(7,8,10,.62));
       backdrop-filter: blur(14px);
       border-bottom:1px solid rgba(255,255,255,.10);
     }
     .header-inner{
-      max-width:1120px;
-      margin:0 auto;
-      padding:14px 18px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
-      position:relative;
-      z-index:1;
+      max-width:1120px; margin:0 auto; padding:14px 18px;
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+      position:relative; z-index:1;
     }
 
-    .brand{display:flex; align-items:center; gap:14px; min-width: 260px;}
-
-    /* ✅ LOGO BEM MAIOR (mobile e pc) */
+    .brand{display:flex; align-items:center; gap:14px;}
+    /* LOGO grande */
     .brand img{
-      width:96px; height:96px;              /* PC */
-      border-radius:22px;
+      width:104px; height:104px;
+      border-radius:24px;
       object-fit:contain;
       background: rgba(255,255,255,.10);
       border:1px solid rgba(255,255,255,.22);
@@ -120,7 +113,7 @@
       border-radius:14px;
       border:1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.06);
-      font-weight:800;
+      font-weight:900;
       font-size:13px;
       transition:.15s ease;
       display:inline-flex; align-items:center; gap:8px;
@@ -128,17 +121,15 @@
     }
     .btn:hover{transform:translateY(-1px); border-color: rgba(255,255,255,.22)}
     .btn.primary{
-      background: linear-gradient(135deg, rgba(255,255,255,.95), rgba(255,255,255,.88));
+      background: linear-gradient(135deg, rgba(255,255,255,.96), rgba(255,255,255,.86));
       color:#000;
       border-color: rgba(255,255,255,.85);
       box-shadow: 0 10px 30px rgba(0,0,0,.35);
     }
 
     .wrap{
-      position:relative;
-      z-index:1;
-      max-width:1120px;
-      margin:0 auto;
+      position:relative; z-index:1;
+      max-width:1120px; margin:0 auto;
       padding:20px 18px 96px;
     }
 
@@ -158,8 +149,6 @@
       position:relative;
       overflow:hidden;
     }
-
-    /* linhas modernas dentro do card */
     .card:before{
       content:"";
       position:absolute; inset:-2px;
@@ -167,12 +156,12 @@
         linear-gradient(120deg, rgba(34,197,94,.10), transparent 35%),
         linear-gradient(240deg, rgba(6,182,212,.10), transparent 35%),
         linear-gradient(20deg, rgba(139,92,246,.08), transparent 35%);
+      opacity:.95;
       pointer-events:none;
-      opacity:.9;
     }
     .card > *{position:relative; z-index:1}
 
-    .hero h2{margin:0 0 10px; font-size:42px; line-height:1.05}
+    h2{margin:0 0 10px; font-size:42px; line-height:1.05}
     .sub{margin:0 0 18px; color:var(--muted); font-size:15px; line-height:1.65}
 
     .chips{display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 0}
@@ -191,12 +180,12 @@
     .section{margin-top:22px}
     .section h3{margin:0 0 10px; font-size:16px}
 
-    .preview{
+    .gallery{
       display:grid;
       grid-template-columns: repeat(3, 1fr);
       gap:12px;
     }
-    .ph{
+    .tile{
       aspect-ratio: 4/3;
       border-radius:18px;
       border:1px solid rgba(255,255,255,.10);
@@ -204,21 +193,34 @@
       background: rgba(255,255,255,.03);
       position:relative;
     }
-    .ph img{
-      width:100%;
-      height:100%;
+    .tile img{
+      width:100%; height:100%;
       object-fit:cover;
       display:block;
       transform:scale(1.02);
-      filter: contrast(1.03) saturate(1.02);
       transition: transform .22s ease;
     }
-    .ph:hover img{ transform: scale(1.06); }
-    .ph:after{
+    .tile:hover img{ transform: scale(1.06); }
+    .tile:after{
       content:"";
       position:absolute; inset:0;
-      background: linear-gradient(180deg, rgba(0,0,0,.00) 55%, rgba(0,0,0,.30) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,.00) 55%, rgba(0,0,0,.32) 100%);
       pointer-events:none;
+    }
+    .cap{
+      position:absolute; left:12px; right:12px; bottom:10px;
+      display:flex; justify-content:space-between; gap:10px;
+      font-size:12px;
+    }
+    .tag{
+      padding:6px 9px;
+      border-radius:999px;
+      background: rgba(0,0,0,.35);
+      border: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(8px);
+      white-space:nowrap;
+      color:rgba(255,255,255,.9);
+      text-shadow: 0 8px 25px rgba(0,0,0,.65);
     }
 
     .footer{
@@ -244,23 +246,22 @@
       border-radius:16px;
       background: linear-gradient(135deg, rgba(255,255,255,.96), rgba(255,255,255,.86));
       color:#000;
-      font-weight:900;
+      font-weight:950;
       border:1px solid rgba(255,255,255,.55);
       box-shadow: 0 18px 60px rgba(0,0,0,.55);
     }
 
     @media (max-width: 920px){
       .hero{grid-template-columns:1fr}
-      .preview{grid-template-columns:1fr 1fr}
-      .hero h2{font-size:34px}
-      .brand{min-width:unset}
-      .brand img{width:92px;height:92px}
+      .gallery{grid-template-columns:1fr 1fr}
+      h2{font-size:34px}
+      .brand img{width:96px;height:96px}
     }
     @media (max-width: 520px){
-      .preview{grid-template-columns:1fr}
-      .brand img{width:88px;height:88px} /* ✅ MOBILE */
-      .hero h2{font-size:32px}
-      .side{width:140px; opacity:.9;}
+      .gallery{grid-template-columns:1fr}
+      .brand img{width:94px;height:94px}
+      h2{font-size:32px}
+      .side{width:140px;}
     }
   </style>
 
@@ -295,8 +296,9 @@
           <p>Ponte da Barca • Lettering • Blackwork • Dotwork</p>
         </div>
       </div>
+
       <div class="cta">
-        <a class="btn" href="portfolio.html">Portfólio</a>
+        <a class="btn" href="#portfolio">Portfólio</a>
         <a class="btn" href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Instagram</a>
         <a class="btn primary" href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Agendar</a>
       </div>
@@ -310,12 +312,12 @@
           <h2>Tatuagens com detalhe.<br/>Feitas para durar.</h2>
           <p class="sub">
             Especialista em <strong>lettering</strong>, <strong>blackwork</strong> e <strong>dotwork</strong>.
-            Para marcação e orçamentos, fala comigo pelo Instagram.
+            Para marcação e orçamentos, envia mensagem pelo Instagram.
           </p>
 
           <div class="cta" style="justify-content:flex-start">
             <a class="btn primary" href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Pedir orçamento</a>
-            <a class="btn" href="portfolio.html">Ver portfólio</a>
+            <a class="btn" href="#portfolio">Ver portfólio</a>
           </div>
 
           <div class="chips">
@@ -340,22 +342,50 @@
             </div>
             <div class="mini">
               <h3>3) Sessão</h3>
-              <p>Trabalho com cuidado, detalhe e foco total na tua experiência.</p>
+              <p>Trabalho com cuidado e atenção total ao detalhe.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <h3>Portfólio (seleção)</h3>
-        <div class="preview">
-          <div class="ph"><img src="blackwork-skull-moon.png" alt="Blackwork caveira e lua — Cris Santos Tattoo" loading="lazy"></div>
-          <div class="ph"><img src="lettering-jesus.png" alt="Lettering — Cris Santos Tattoo" loading="lazy"></div>
-          <div class="ph"><img src="dotwork-dreamcatcher.png" alt="Dotwork dreamcatcher — Cris Santos Tattoo" loading="lazy"></div>
+      <section class="section" id="portfolio">
+        <h3>Portfólio</h3>
+
+        <div class="gallery">
+          <a class="tile" href="blackwork-skull-moon.png" target="_blank" rel="noopener">
+            <img src="blackwork-skull-moon.png" alt="Blackwork caveira e lua" loading="lazy">
+            <div class="cap"><span class="tag">Blackwork</span><span class="tag">Caveira & Lua</span></div>
+          </a>
+
+          <a class="tile" href="lettering-jesus.png" target="_blank" rel="noopener">
+            <img src="lettering-jesus.png" alt="Lettering" loading="lazy">
+            <div class="cap"><span class="tag">Lettering</span><span class="tag">Fine line</span></div>
+          </a>
+
+          <a class="tile" href="dotwork-dreamcatcher.png" target="_blank" rel="noopener">
+            <img src="dotwork-dreamcatcher.png" alt="Dotwork dreamcatcher" loading="lazy">
+            <div class="cap"><span class="tag">Dotwork</span><span class="tag">Dreamcatcher</span></div>
+          </a>
+
+          <a class="tile" href="dark-ornamental-ram-skull.png" target="_blank" rel="noopener">
+            <img src="dark-ornamental-ram-skull.png" alt="Ornamental dark" loading="lazy">
+            <div class="cap"><span class="tag">Blackwork</span><span class="tag">Ornamental</span></div>
+          </a>
+
+          <a class="tile" href="ornamental-floral-blackwork.png" target="_blank" rel="noopener">
+            <img src="ornamental-floral-blackwork.png" alt="Floral ornamental" loading="lazy">
+            <div class="cap"><span class="tag">Ornamental</span><span class="tag">Floral</span></div>
+          </a>
+
+          <a class="tile" href="minimal-toe-faces.png" target="_blank" rel="noopener">
+            <img src="minimal-toe-faces.png" alt="Minimal tattoo" loading="lazy">
+            <div class="cap"><span class="tag">Minimal</span><span class="tag">Criativo</span></div>
+          </a>
         </div>
 
         <div class="cta" style="margin-top:14px; justify-content:flex-start">
-          <a class="btn" href="portfolio.html">Ver portfólio completo</a>
+          <a class="btn primary" href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Pedir orçamento</a>
+          <a class="btn" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Voltar ao topo</a>
         </div>
       </section>
 
@@ -364,8 +394,7 @@
           <h3 style="margin:0 0 8px;">Localização</h3>
           <p class="sub" style="margin:0">
             Atendo em <strong>Ponte da Barca</strong> e recebo clientes de <strong>Viana do Castelo</strong>,
-            <strong>Arcos de Valdevez</strong> e arredores.
-            Para morada e horários, envia mensagem no Instagram.
+            <strong>Arcos de Valdevez</strong> e arredores. Para morada e horários, envia mensagem no Instagram.
           </p>
           <div class="cta" style="justify-content:flex-start; margin-top:14px">
             <a class="btn primary" href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Marcar sessão</a>
