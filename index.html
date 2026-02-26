@@ -1,354 +1,225 @@
 <!doctype html>
 <html lang="pt-PT">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
 
-  <title>Cris Santos Tattoo | Tatuagens em Ponte da Barca</title>
-  <meta name="description" content="Cris Santos Tattoo — tatuagens em Ponte da Barca. Especialista em lettering, blackwork e dotwork. Marca a tua sessão pelo Instagram." />
-  <link rel="canonical" href="https://crisantostattoo.pt/" />
+<title>Cris Santos Tattoo | Tatuagens em Ponte da Barca</title>
+<meta name="description" content="Cris Santos Tattoo — tatuagens em Ponte da Barca. Especialista em lettering, blackwork e dotwork. Marca a tua sessão pelo Instagram." />
+<link rel="canonical" href="https://crisantostattoo.pt/" />
 
-  <meta property="og:title" content="Cris Santos Tattoo | Ponte da Barca" />
-  <meta property="og:description" content="Lettering • Blackwork • Dotwork — marca a tua tatuagem." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://crisantostattoo.pt/" />
-  <meta property="og:image" content="https://crisantostattoo.pt/assets/logo.png" />
-  <meta name="theme-color" content="#0b0b0b" />
+<meta property="og:title" content="Cris Santos Tattoo | Ponte da Barca" />
+<meta property="og:description" content="Lettering • Blackwork • Dotwork — marca a tua tatuagem." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://crisantostattoo.pt/" />
+<meta property="og:image" content="https://crisantostattoo.pt/cris-logo.png" />
 
-  <link rel="icon" href="/assets/logo.png" />
+<link rel="icon" href="cris-logo.png" />
+<meta name="theme-color" content="#0b0b0b" />
 
-  <style>
-    :root{
-      --bg:#0b0b0b;
-      --card:rgba(18,18,18,.72);
-      --text:#f5f5f5;
-      --muted:#b9b9b9;
-      --line:rgba(255,255,255,.12);
-      --radius:18px;
-      --shadow: 0 14px 44px rgba(0,0,0,.45);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica;
-      background:
-        radial-gradient(1200px 800px at 20% 0%, rgba(255,255,255,.08), transparent 55%),
-        radial-gradient(900px 600px at 85% 10%, rgba(255,255,255,.06), transparent 60%),
-        var(--bg);
-      color:var(--text);
-    }
-    a{color:inherit; text-decoration:none}
-    .wrap{max-width:1120px; margin:0 auto; padding:22px 18px 82px}
+<style>
+:root{
+--bg:#0b0b0b;
+--card:rgba(18,18,18,.75);
+--text:#f5f5f5;
+--muted:#b9b9b9;
+--line:rgba(255,255,255,.12);
+--radius:18px;
+}
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+background:var(--bg);
+color:var(--text);
+}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 18px 80px}
 
-    header{
-      position:sticky; top:0; z-index:50;
-      background: linear-gradient(180deg, rgba(11,11,11,.92), rgba(11,11,11,.62));
-      backdrop-filter: blur(14px);
-      border-bottom:1px solid rgba(255,255,255,.06);
-    }
-    .header-inner{
-      max-width:1120px; margin:0 auto;
-      padding:14px 18px;
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px;
-    }
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:24px;
+}
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+}
+.brand img{
+width:60px;
+height:60px;
+object-fit:contain;
+border-radius:16px;
+background:#111;
+padding:8px;
+border:1px solid var(--line);
+}
+.brand h1{margin:0;font-size:18px}
+.brand p{margin:0;font-size:13px;color:var(--muted)}
 
-    .brand{display:flex; gap:12px; align-items:center; min-width: 240px;}
-    .brand img{
-      height:54px; width:54px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      padding:8px;
-      box-shadow: 0 10px 24px rgba(0,0,0,.35);
-      object-fit:contain;
-    }
-    .brand h1{font-size:15px; margin:0; letter-spacing:.2px}
-    .brand p{margin:0; font-size:12px; color:var(--muted)}
+.btn{
+padding:12px 16px;
+border-radius:14px;
+border:1px solid var(--line);
+background:#111;
+font-weight:600;
+font-size:14px;
+transition:.2s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{
+background:#fff;
+color:#000;
+border-color:#fff;
+}
 
-    .cta{display:flex; gap:10px; align-items:center}
-    .btn{
-      padding:11px 14px; border-radius:14px; border:1px solid var(--line);
-      background: rgba(255,255,255,.06);
-      font-weight:650; font-size:13px;
-      transition:.15s ease;
-      display:inline-flex; align-items:center; gap:8px;
-      white-space:nowrap;
-    }
-    .btn:hover{transform:translateY(-1px); border-color: rgba(255,255,255,.18)}
-    .btn.primary{background:#fff; color:#000; border-color:#fff;}
+.hero{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:18px;
+margin-bottom:24px;
+}
+.card{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:var(--radius);
+padding:24px;
+}
+.hero h2{
+font-size:38px;
+margin:0 0 12px;
+line-height:1.1;
+}
+.sub{
+color:var(--muted);
+line-height:1.6;
+margin-bottom:18px;
+}
 
-    .hero{
-      margin-top:18px;
-      display:grid; grid-template-columns:1.15fr .85fr;
-      gap:18px;
-    }
-    .card{
-      background: var(--card);
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      padding:22px;
-      box-shadow: var(--shadow);
-    }
-    .hero h2{margin:0 0 10px; font-size:40px; line-height:1.05}
-    .hero .sub{margin:0 0 18px; color:var(--muted); font-size:15px; line-height:1.65}
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px;
+margin-top:12px;
+}
+.gallery img{
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:18px;
+border:1px solid var(--line);
+cursor:pointer;
+transition:.25s;
+}
+.gallery img:hover{
+transform:scale(1.05);
+}
 
-    .chips{display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 0}
-    .chip{
-      padding:8px 10px; border-radius:999px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
-      font-size:12px; color:#eaeaea;
-    }
-    .mini h3{margin:0 0 6px; font-size:14px}
-    .mini p{margin:0; color:var(--muted); font-size:13px; line-height:1.55}
+.footer{
+margin-top:40px;
+padding-top:20px;
+border-top:1px solid var(--line);
+font-size:13px;
+color:var(--muted);
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+}
 
-    .section{margin-top:22px}
-    .section h3{margin:0 0 10px; font-size:16px}
+.floating{
+position:fixed;
+bottom:18px;
+left:0;
+right:0;
+display:flex;
+justify-content:center;
+}
+.floating a{
+background:#fff;
+color:#000;
+padding:16px 24px;
+border-radius:16px;
+font-weight:800;
+box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
 
-    .gallery{
-      display:grid; gap:12px;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .ph{
-      aspect-ratio: 1 / 1;
-      border-radius: 18px;
-      border:1px solid rgba(255,255,255,.10);
-      overflow:hidden;
-      background: rgba(255,255,255,.03);
-      position:relative;
-      cursor: zoom-in;
-    }
-    .ph img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-      transform:scale(1.02);
-      filter: contrast(1.03) saturate(1.02);
-      transition: transform .22s ease;
-    }
-    .ph:hover img{ transform: scale(1.06); }
-    .ph:after{
-      content:"";
-      position:absolute; inset:0;
-      background: linear-gradient(180deg, rgba(0,0,0,.00) 55%, rgba(0,0,0,.28) 100%);
-      pointer-events:none;
-    }
-
-    .footer{
-      margin-top:22px;
-      display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between;
-      color:var(--muted); font-size:12px;
-      border-top:1px solid rgba(255,255,255,.10);
-      padding-top:18px;
-    }
-    .links{display:flex; gap:14px; flex-wrap:wrap}
-    .links a{opacity:.9}
-    .links a:hover{opacity:1; text-decoration:underline}
-
-    /* Floating CTA (mobile-first conversions) */
-    .floating{
-      position:fixed; left:0; right:0; bottom:14px;
-      display:flex; justify-content:center;
-      padding:0 14px;
-      z-index:60;
-      pointer-events:none;
-    }
-    .floating a{
-      pointer-events:auto;
-      width:min(560px, 100%);
-      display:flex; justify-content:center;
-      padding:14px 16px;
-      border-radius:16px;
-      background:#fff;
-      color:#000;
-      font-weight:800;
-      border:1px solid rgba(255,255,255,.35);
-      box-shadow: 0 18px 60px rgba(0,0,0,.55);
-    }
-
-    /* Lightbox */
-    .lightbox{
-      position:fixed; inset:0; z-index:80;
-      background: rgba(0,0,0,.86);
-      display:none;
-      align-items:center; justify-content:center;
-      padding:18px;
-    }
-    .lightbox.open{display:flex;}
-    .lightbox img{
-      max-width:min(980px, 100%);
-      max-height:88vh;
-      border-radius:18px;
-      border:1px solid rgba(255,255,255,.14);
-      box-shadow: 0 18px 70px rgba(0,0,0,.65);
-      cursor: zoom-out;
-    }
-
-    @media (max-width: 920px){
-      .hero{grid-template-columns:1fr}
-      .gallery{grid-template-columns:1fr 1fr}
-      .hero h2{font-size:34px}
-      .brand{min-width: unset;}
-    }
-    @media (max-width: 520px){
-      .gallery{grid-template-columns:1fr}
-      .cta{gap:8px}
-      .btn{padding:10px 12px}
-      .brand img{height:50px; width:50px}
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"TattooParlor",
-    "name":"Cris Santos Tattoo",
-    "url":"https://crisantostattoo.pt/",
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Ponte da Barca",
-      "addressCountry":"PT"
-    },
-    "sameAs":[
-      "https://www.instagram.com/criisantos.tattoo/"
-    ]
-  }
-  </script>
+@media(max-width:900px){
+.hero{grid-template-columns:1fr}
+.gallery{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+.gallery{grid-template-columns:1fr}
+}
+</style>
 </head>
 
 <body>
-  <header>
-    <div class="header-inner">
-      <div class="brand">
-        <img src="/assets/logo.png" alt="Cris Santos Tattoo logo">
-        <div>
-          <h1>Cris Santos Tattoo</h1>
-          <p>Ponte da Barca • Lettering • Blackwork • Dotwork</p>
-        </div>
-      </div>
-      <div class="cta">
-        <a class="btn" href="#portfolio">Portfólio</a>
-        <a class="btn" href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Instagram</a>
-        <a class="btn primary" href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Agendar</a>
-      </div>
-    </div>
-  </header>
+<div class="wrap">
 
-  <div class="wrap">
-    <main>
-      <section class="hero">
-        <div class="card">
-          <h2>Tatuagens com detalhe.<br/>Feitas para durar.</h2>
-          <p class="sub">
-            Trabalho com foco em <strong>lettering</strong>, <strong>blackwork</strong> e <strong>dotwork</strong>.
-            Para marcação e orçamentos, fala comigo pelo Instagram.
-          </p>
+<header>
+<div class="brand">
+<img src="cris-logo.png" alt="Cris Santos Tattoo logo">
+<div>
+<h1>Cris Santos Tattoo</h1>
+<p>Ponte da Barca • Lettering • Blackwork • Dotwork</p>
+</div>
+</div>
+<div>
+<a class="btn" href="#portfolio">Portfólio</a>
+<a class="btn primary" href="https://www.instagram.com/criisantos.tattoo/" target="_blank">Agendar</a>
+</div>
+</header>
 
-          <div class="cta" style="justify-content:flex-start; flex-wrap:wrap">
-            <a class="btn primary" href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Pedir orçamento</a>
-            <a class="btn" href="#portfolio">Ver portfólio</a>
-          </div>
+<section class="hero">
+<div class="card">
+<h2>Tatuagens com detalhe.<br>Feitas para durar.</h2>
+<p class="sub">
+Especialista em <strong>lettering</strong>, <strong>blackwork</strong> e <strong>dotwork</strong>.
+Para marcação e orçamentos, envia mensagem pelo Instagram.
+</p>
+<a class="btn primary" href="https://www.instagram.com/criisantos.tattoo/" target="_blank">Pedir orçamento</a>
+</div>
 
-          <div class="chips">
-            <div class="chip">Lettering</div>
-            <div class="chip">Blackwork</div>
-            <div class="chip">Dotwork</div>
-            <div class="chip">Agendamento fácil</div>
-            <div class="chip">Foco em higiene & segurança</div>
-          </div>
-        </div>
+<div class="card">
+<h3>Como funciona</h3>
+<p><strong>1) Envia a ideia</strong><br>Foto, referência e local do corpo.</p>
+<p><strong>2) Orçamento & marcação</strong><br>Confirmamos tamanho e data.</p>
+<p><strong>3) Sessão</strong><br>Trabalho com detalhe e foco total na tua experiência.</p>
+</div>
+</section>
 
-        <div class="card">
-          <h3 style="margin:0 0 10px; font-size:16px;">Como funciona</h3>
-          <div style="display:grid; gap:10px;">
-            <div class="mini">
-              <h3>1) Envia a ideia</h3>
-              <p>Foto, referência e local do corpo. Eu digo-te o que resulta melhor.</p>
-            </div>
-            <div class="mini">
-              <h3>2) Orçamento & marcação</h3>
-              <p>Confirmamos tamanho, estilo e data. Simples e direto.</p>
-            </div>
-            <div class="mini">
-              <h3>3) Sessão</h3>
-              <p>Trabalho com cuidado, detalhe e foco total na tua experiência.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<section id="portfolio">
+<h2>Portfólio</h2>
 
-      <section class="section" id="portfolio">
-        <h3>Portfólio</h3>
-        <div class="gallery">
-          <div class="ph"><img data-full="/assets/images/blackwork-skull-moon.png" src="/assets/images/blackwork-skull-moon.png" alt="Blackwork caveira e lua — Cris Santos Tattoo" loading="lazy"></div>
-          <div class="ph"><img data-full="/assets/images/lettering-jesus.png" src="/assets/images/lettering-jesus.png" alt="Lettering — Cris Santos Tattoo" loading="lazy"></div>
-          <div class="ph"><img data-full="/assets/images/dotwork-dreamcatcher.png" src="/assets/images/dotwork-dreamcatcher.png" alt="Dotwork dreamcatcher — Cris Santos Tattoo" loading="lazy"></div>
-          <div class="ph"><img data-full="/assets/images/minimal-toe-faces.png" src="/assets/images/minimal-toe-faces.png" alt="Minimalista criativo — Cris Santos Tattoo" loading="lazy"></div>
-          <div class="ph"><img data-full="/assets/images/dark-ornamental-ram-skull.png" src="/assets/images/dark-ornamental-ram-skull.png" alt="Dark ornamental — Cris Santos Tattoo" loading="lazy"></div>
-          <div class="ph"><img data-full="/assets/images/ornamental-floral-blackwork.png" src="/assets/images/ornamental-floral-blackwork.png" alt="Ornamental floral blackwork — Cris Santos Tattoo" loading="lazy"></div>
-        </div>
-      </section>
+<div class="gallery">
+<img src="blackwork-skull-moon.png" alt="Blackwork caveira e lua">
+<img src="lettering-jesus.png" alt="Lettering tattoo">
+<img src="dotwork-dreamcatcher.png" alt="Dotwork dreamcatcher">
+<img src="minimal-toe-faces.png" alt="Minimal tattoo">
+<img src="dark-ornamental-ram-skull.png" alt="Dark ornamental tattoo">
+<img src="ornamental-floral-blackwork.png" alt="Ornamental floral blackwork">
+</div>
+</section>
 
-      <section class="section">
-        <div class="card">
-          <h3 style="margin:0 0 8px;">Localização</h3>
-          <p class="sub" style="margin:0">
-            Atendo em <strong>Ponte da Barca</strong> e recebo clientes de <strong>Viana do Castelo</strong>,
-            <strong>Arcos de Valdevez</strong> e arredores.
-            Para morada e horários, envia mensagem no Instagram.
-          </p>
-          <div class="cta" style="justify-content:flex-start; margin-top:14px">
-            <a class="btn primary" href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Marcar sessão</a>
-          </div>
-        </div>
-      </section>
+<div class="footer">
+<div>© <span id="year"></span> Cris Santos Tattoo</div>
+<div>crisantostattoo.pt</div>
+</div>
 
-      <div class="footer">
-        <div>© <span id="y"></span> Cris Santos Tattoo • crisantostattoo.pt</div>
-        <div class="links">
-          <a href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Instagram</a>
-        </div>
-      </div>
-    </main>
-  </div>
+</div>
 
-  <div class="floating">
-    <a href="https://www.instagram.com/criisantos.tattoo/" target="_blank" rel="noopener">Agendar pelo Instagram</a>
-  </div>
+<div class="floating">
+<a href="https://www.instagram.com/criisantos.tattoo/" target="_blank">
+Agendar pelo Instagram
+</a>
+</div>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <img id="lightboxImg" alt="">
-  </div>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    const lb = document.getElementById('lightbox');
-    const lbImg = document.getElementById('lightboxImg');
-
-    document.querySelectorAll('.ph img').forEach(img => {
-      img.addEventListener('click', () => {
-        const full = img.getAttribute('data-full') || img.src;
-        lbImg.src = full;
-        lb.classList.add('open');
-        lb.setAttribute('aria-hidden','false');
-      });
-    });
-
-    const closeLb = () => {
-      lb.classList.remove('open');
-      lb.setAttribute('aria-hidden','true');
-      lbImg.src = '';
-    };
-
-    lb.addEventListener('click', closeLb);
-    document.addEventListener('keydown', (e) => {
-      if(e.key === 'Escape') closeLb();
-    });
-  </script>
 </body>
 </html>
