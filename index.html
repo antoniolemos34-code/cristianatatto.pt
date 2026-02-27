@@ -6,49 +6,52 @@
   <meta name="theme-color" content="#0b0c10" />
   <meta name="color-scheme" content="dark" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="format-detection" content="telephone=no" />
 
   <!-- Google Search Console verification -->
   <meta name="google-site-verification" content="Swio6NKm286E8a4drzdcPc69RlopaA9yDM-e3boNyfY" />
 
-  <title>Cris Santos Tattoo — Estúdio de Tatuagem em Ponte da Barca | Lettering • Blackwork • Dotwork</title>
-  <meta name="description" content="Estúdio de tatuagem em Ponte da Barca. Especialista em lettering, blackwork e dotwork. Portfólio, localização e marcações/orçamentos via Instagram." />
+  <title>Cris Santos Tattoo — Ponte da Barca | Lettering • Blackwork • Dotwork</title>
+  <meta name="description" content="Tatuagens com detalhe, feitas para durar. Especialista em lettering, blackwork e dotwork. Marcações e orçamentos pelo Instagram." />
 
   <!-- Canonical (DOMÍNIO FINAL) -->
   <link rel="canonical" href="https://crisantostattoo.pt/" />
 
+  <!-- Hints (performance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="icon" href="/cris-logo.png" sizes="any" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:site_name" content="Cris Santos Tattoo" />
   <meta property="og:title" content="Cris Santos Tattoo — Ponte da Barca" />
-  <meta property="og:description" content="Estúdio de tatuagem em Ponte da Barca. Lettering • Blackwork • Dotwork. Marcações e orçamentos pelo Instagram." />
+  <meta property="og:description" content="Lettering • Blackwork • Dotwork. Marcações e orçamentos pelo Instagram." />
   <meta property="og:url" content="https://crisantostattoo.pt/" />
   <meta property="og:image" content="https://crisantostattoo.pt/cris-logo.png" />
-  <meta property="og:image:alt" content="Cris Santos Tattoo — logótipo" />
+  <meta property="og:image:alt" content="Logo Cris Santos Tattoo" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Cris Santos Tattoo — Ponte da Barca" />
-  <meta name="twitter:description" content="Estúdio de tatuagem em Ponte da Barca. Lettering • Blackwork • Dotwork." />
+  <meta name="twitter:description" content="Lettering • Blackwork • Dotwork. Marcações e orçamentos pelo Instagram." />
   <meta name="twitter:image" content="https://crisantostattoo.pt/cris-logo.png" />
-
-  <link rel="icon" href="/cris-logo.png" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root{
       --bg:#07080b;
       --card:rgba(255,255,255,.06);
-      --card2:rgba(255,255,255,.08);
       --stroke:rgba(255,255,255,.10);
-      --stroke2:rgba(255,255,255,.16);
       --text:#eef0f6;
       --muted:rgba(238,240,246,.72);
       --muted2:rgba(238,240,246,.55);
       --accent:#b7f7ff;
       --accent2:#c7b6ff;
-      --accent3:#ffffff;
       --shadow: 0 18px 60px rgba(0,0,0,.55);
       --radius: 22px;
       --max: 1180px;
@@ -62,6 +65,9 @@
       background: var(--bg);
       color: var(--text);
       overflow-x:hidden;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     .bg{
@@ -92,6 +98,11 @@
     }
 
     a{color:inherit; text-decoration:none}
+    a:focus-visible, button:focus-visible, .tile:focus-visible{
+      outline: 2px solid rgba(183,247,255,.55);
+      outline-offset: 3px;
+      border-radius: 14px;
+    }
     .container{width:min(var(--max), 92vw); margin:0 auto}
 
     header{
@@ -120,7 +131,7 @@
     }
     .logoWrap img{
       width:100%; height:100%; object-fit:cover;
-      transform: scale(1.08);
+      transform: scale(1.06);
     }
     .brandText{line-height:1.05}
     .brandText strong{display:block; font-weight:800; letter-spacing:-.02em}
@@ -185,24 +196,17 @@
     .heroInner{position:relative}
     h1{
       margin:0 0 10px 0;
-      font-size: clamp(30px, 4.2vw, 52px);
-      line-height: 1.05;
+      font-size: clamp(34px, 4.6vw, 56px);
+      line-height: 1.02;
       letter-spacing:-.03em;
       font-weight: 850;
-    }
-    .lede{
-      margin: 0 0 14px 0;
-      font-size: 15.5px;
-      color: rgba(238,240,246,.80);
-      line-height:1.65;
-      max-width: 62ch;
     }
     .sub{
       margin: 0 0 16px 0;
       font-size: 15.5px;
       color: var(--muted);
       line-height:1.6;
-      max-width: 62ch;
+      max-width: 58ch;
     }
     .chips{display:flex; gap:8px; flex-wrap:wrap; margin-top: 14px}
     .chip{
@@ -369,14 +373,6 @@
     .bigCta b{font-weight: 900}
     .bigCta .mut{color: var(--muted); font-size: 13px}
 
-    .srOnly{
-      position:absolute!important;
-      width:1px;height:1px;
-      padding:0;margin:-1px;
-      overflow:hidden;clip:rect(0,0,0,0);
-      white-space:nowrap;border:0;
-    }
-
     footer{
       margin: 34px 0 18px;
       color: rgba(238,240,246,.55);
@@ -422,7 +418,6 @@
 
     @media (max-width: 980px){
       .hero{grid-template-columns: 1fr}
-      .heroCard{min-height: unset}
       .infoRow{grid-template-columns: 1fr}
       .tile{grid-column: span 6}
     }
@@ -437,15 +432,19 @@
     }
   </style>
 
-  <!-- LocalBusiness schema (melhorado) -->
+  <!-- Schema (TattooParlor) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"TattooParlor",
+    "@id":"https://crisantostattoo.pt/#tattoo-parlor",
     "name":"Cris Santos Tattoo",
-    "image":"https://crisantostattoo.pt/cris-logo.png",
     "url":"https://crisantostattoo.pt/",
-    "description":"Estúdio de tatuagem em Ponte da Barca. Especialista em lettering, blackwork e dotwork. Marcações e orçamentos via Instagram.",
+    "image":"https://crisantostattoo.pt/cris-logo.png",
+    "logo":"https://crisantostattoo.pt/cris-logo.png",
+    "sameAs":[
+      "https://www.instagram.com/criisantos.tattoo/"
+    ],
     "address":{
       "@type":"PostalAddress",
       "streetAddress":"Centro Comercial O Emigrante, Loja nº 6",
@@ -453,31 +452,26 @@
       "postalCode":"4950-416",
       "addressCountry":"PT"
     },
-    "areaServed":[
-      "Ponte da Barca",
-      "Ponte de Lima",
-      "Arcos de Valdevez",
-      "Viana do Castelo"
-    ],
-    "sameAs":[
-      "https://www.instagram.com/criisantos.tattoo/"
-    ],
+    "areaServed":{
+      "@type":"AdministrativeArea",
+      "name":"Ponte da Barca"
+    },
     "hasMap":"https://www.google.com/maps/search/?api=1&query=Centro%20Comercial%20O%20Emigrante%20Loja%206%20Ponte%20da%20Barca"
   }
   </script>
 </head>
 
 <body>
-  <div class="bg"></div>
-  <div class="gridlines"></div>
-  <div class="noise"></div>
+  <div class="bg" aria-hidden="true"></div>
+  <div class="gridlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
 
   <header>
     <div class="container">
       <div class="nav">
         <a class="brand" href="#top" aria-label="Ir para o topo">
           <div class="logoWrap" title="Cris Santos Tattoo">
-            <img src="/cris-logo.png" alt="Logo Cris Santos Tattoo" />
+            <img src="/cris-logo.png" alt="Logo Cris Santos Tattoo" width="56" height="56" fetchpriority="high" />
           </div>
           <div class="brandText">
             <strong>Cris Santos Tattoo</strong>
@@ -496,24 +490,16 @@
     </div>
   </header>
 
-  <main id="top" role="main">
+  <main id="top">
     <div class="container">
 
-      <section class="hero" aria-label="Introdução">
+      <section class="hero" aria-label="Apresentação">
         <div class="card heroCard">
           <div class="heroInner">
-            <p class="srOnly">Cris Santos Tattoo — Estúdio de tatuagem em Ponte da Barca.</p>
-
-            <h1>Estúdio de Tatuagem em Ponte da Barca</h1>
-
-            <p class="lede">
-              <b>Cris Santos Tattoo</b> — tatuagens com detalhe, feitas para durar.
-              Especialista em <b>lettering</b>, <b>blackwork</b> e <b>dotwork</b>.
-            </p>
-
+            <h1>Tatuagens com detalhe.<br/>Feitas para durar.</h1>
             <p class="sub">
-              Para <b>marcações</b> e <b>orçamentos</b>, envia mensagem pelo Instagram.
-              Se já tiveres uma referência/foto e a zona do corpo, o orçamento fica muito mais rápido.
+              Especialista em <b>lettering</b>, <b>blackwork</b> e <b>dotwork</b>.
+              Para <b>marcação</b> e <b>orçamentos</b>, envia mensagem pelo Instagram — simples e direto.
             </p>
 
             <div class="ctaRow">
@@ -527,13 +513,11 @@
               <span class="chip">Lettering</span>
               <span class="chip">Blackwork</span>
               <span class="chip">Dotwork</span>
-              <span class="chip">Marcação por mensagem</span>
+              <span class="chip">Agendamento fácil</span>
               <span class="chip">Higiene &amp; segurança</span>
             </div>
 
-            <div class="hint">
-              Atendo principalmente em <b>Ponte da Barca</b> e arredores (Ponte de Lima, Arcos de Valdevez, Viana do Castelo).
-            </div>
+            <div class="hint">* Trabalhos por marcação. Envia referência/foto e zona do corpo para acelerar o orçamento.</div>
           </div>
         </div>
 
@@ -542,7 +526,7 @@
 
           <div class="steps">
             <div class="step">
-              <div class="num">1</div>
+              <div class="num" aria-hidden="true">1</div>
               <div>
                 <b>Envia a ideia</b>
                 <p>Foto/referência, tamanho aproximado e zona do corpo. Eu digo-te o que resulta melhor.</p>
@@ -550,7 +534,7 @@
             </div>
 
             <div class="step">
-              <div class="num">2</div>
+              <div class="num" aria-hidden="true">2</div>
               <div>
                 <b>Orçamento &amp; marcação</b>
                 <p>Confirmamos estilo, data e detalhes. Tudo claro antes da sessão.</p>
@@ -558,7 +542,7 @@
             </div>
 
             <div class="step">
-              <div class="num">3</div>
+              <div class="num" aria-hidden="true">3</div>
               <div>
                 <b>Sessão</b>
                 <p>Trabalho com cuidado, detalhe e foco total na tua experiência.</p>
@@ -566,7 +550,7 @@
             </div>
           </div>
 
-          <div class="kpis" style="margin-top:14px">
+          <div class="kpis" style="margin-top:14px" aria-label="Qualidades">
             <span class="kpi">Traço limpo</span>
             <span class="kpi">Detalhe</span>
             <span class="kpi">Ambiente confortável</span>
@@ -581,8 +565,8 @@
         </div>
 
         <div class="grid" role="list">
-          <div class="tile" role="listitem" data-full="blackwork-skull-moon.png" data-title="Blackwork — Caveira e Lua">
-            <img src="blackwork-skull-moon.png" alt="Tatuagem blackwork (caveira e lua) — Ponte da Barca" loading="lazy" />
+          <div class="tile" role="listitem" data-full="/blackwork-skull-moon.png" data-title="Blackwork — Caveira e Lua" tabindex="0" aria-label="Abrir imagem do portfólio: Blackwork — Caveira e Lua">
+            <img src="/blackwork-skull-moon.png" alt="Tatuagem blackwork: caveira e lua" loading="lazy" decoding="async" width="800" height="600" />
             <div class="cap">
               <div>
                 <strong>Blackwork</strong>
@@ -592,8 +576,8 @@
             </div>
           </div>
 
-          <div class="tile" role="listitem" data-full="lettering-jesus.png" data-title="Lettering — Jesus">
-            <img src="lettering-jesus.png" alt="Tatuagem lettering (Jesus) — Ponte da Barca" loading="lazy" />
+          <div class="tile" role="listitem" data-full="/lettering-jesus.png" data-title="Lettering — Jesus" tabindex="0" aria-label="Abrir imagem do portfólio: Lettering — Jesus">
+            <img src="/lettering-jesus.png" alt="Tatuagem lettering: Jesus" loading="lazy" decoding="async" width="800" height="600" />
             <div class="cap">
               <div>
                 <strong>Lettering</strong>
@@ -603,8 +587,8 @@
             </div>
           </div>
 
-          <div class="tile" role="listitem" data-full="dotwork-dreamcatcher.png" data-title="Dotwork — Dreamcatcher">
-            <img src="dotwork-dreamcatcher.png" alt="Tatuagem dotwork (dreamcatcher) — Ponte da Barca" loading="lazy" />
+          <div class="tile" role="listitem" data-full="/dotwork-dreamcatcher.png" data-title="Dotwork — Dreamcatcher" tabindex="0" aria-label="Abrir imagem do portfólio: Dotwork — Dreamcatcher">
+            <img src="/dotwork-dreamcatcher.png" alt="Tatuagem dotwork: dreamcatcher" loading="lazy" decoding="async" width="800" height="600" />
             <div class="cap">
               <div>
                 <strong>Dotwork</strong>
@@ -614,8 +598,8 @@
             </div>
           </div>
 
-          <div class="tile" role="listitem" data-full="dark-ornamental-ram-skull.png" data-title="Ornamental — Caveira de Carneiro">
-            <img src="dark-ornamental-ram-skull.png" alt="Tatuagem ornamental (caveira de carneiro) — Ponte da Barca" loading="lazy" />
+          <div class="tile" role="listitem" data-full="/dark-ornamental-ram-skull.png" data-title="Ornamental — Caveira de Carneiro" tabindex="0" aria-label="Abrir imagem do portfólio: Ornamental — Caveira de Carneiro">
+            <img src="/dark-ornamental-ram-skull.png" alt="Tatuagem ornamental: caveira de carneiro" loading="lazy" decoding="async" width="800" height="600" />
             <div class="cap">
               <div>
                 <strong>Ornamental</strong>
@@ -625,8 +609,8 @@
             </div>
           </div>
 
-          <div class="tile" role="listitem" data-full="minimal-toe-faces.png" data-title="Minimal — Faces">
-            <img src="minimal-toe-faces.png" alt="Tatuagem minimal (faces) — Ponte da Barca" loading="lazy" />
+          <div class="tile" role="listitem" data-full="/minimal-toe-faces.png" data-title="Minimal — Faces" tabindex="0" aria-label="Abrir imagem do portfólio: Minimal — Faces">
+            <img src="/minimal-toe-faces.png" alt="Tatuagem minimal: faces" loading="lazy" decoding="async" width="800" height="600" />
             <div class="cap">
               <div>
                 <strong>Minimal</strong>
@@ -636,8 +620,8 @@
             </div>
           </div>
 
-          <div class="tile" role="listitem" data-full="ornamental-floral-blackwork.png" data-title="Floral Blackwork">
-            <img src="ornamental-floral-blackwork.png" alt="Tatuagem floral blackwork — Ponte da Barca" loading="lazy" />
+          <div class="tile" role="listitem" data-full="/ornamental-floral-blackwork.png" data-title="Floral Blackwork" tabindex="0" aria-label="Abrir imagem do portfólio: Floral Blackwork">
+            <img src="/ornamental-floral-blackwork.png" alt="Tatuagem floral blackwork" loading="lazy" decoding="async" width="800" height="600" />
             <div class="cap">
               <div>
                 <strong>Floral</strong>
@@ -673,7 +657,7 @@
               4950-416 <b>Ponte da Barca</b>, Portugal
             </p>
 
-            <div class="kpis">
+            <div class="kpis" aria-label="Info rápida">
               <span class="kpi">Marcação por mensagem</span>
               <span class="kpi">Ambiente confortável</span>
               <span class="kpi">Foco em detalhe</span>
@@ -689,12 +673,12 @@
               </a>
             </div>
 
-            <div class="hint">Quando a Cris confirmar horários/telefone, adicionamos aqui para melhorar ainda mais o SEO local.</div>
+            <div class="hint">Se quiseres, depois adicionamos horários e telefone quando ela confirmar.</div>
           </div>
 
           <div class="card" style="overflow:hidden">
             <iframe
-              title="Mapa — Centro Comercial O Emigrante, Loja nº 6 (Ponte da Barca)"
+              title="Mapa — Centro Comercial O Emigrante"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               style="border:0; width:100%; height:100%; min-height:320px"
@@ -723,14 +707,17 @@
   </div>
 
   <script>
+    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Lightbox
     const lb = document.getElementById('lb');
     const lbImg = document.getElementById('lbImg');
     const lbTitle = document.getElementById('lbTitle');
     const closeBtn = document.getElementById('lbClose');
 
     function openLB(src, title){
+      if(!src) return;
       lbImg.src = src;
       lbImg.alt = title || "Imagem";
       lbTitle.textContent = title || "Imagem";
@@ -745,20 +732,22 @@
 
     document.querySelectorAll('.tile').forEach(t => {
       t.addEventListener('click', () => {
-        openLB(t.dataset.full || t.querySelector('img')?.src, t.dataset.title || "Imagem");
+        const src = t.dataset.full || t.querySelector('img')?.getAttribute('src');
+        openLB(src, t.dataset.title || "Imagem");
       });
-      t.addEventListener('keypress', (e) => {
-        if(e.key === 'Enter') t.click();
+      t.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          t.click();
+        }
       });
-      t.setAttribute('tabindex','0');
-      t.setAttribute('role','button');
-      t.setAttribute('aria-label','Abrir imagem do portfólio');
     });
 
     closeBtn.addEventListener('click', closeLB);
     lb.addEventListener('click', (e) => { if(e.target === lb) closeLB(); });
     window.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLB(); });
 
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', (e) => {
         const id = a.getAttribute('href');
@@ -773,4 +762,4 @@
     });
   </script>
 </body>
-  </html>
+</html>
